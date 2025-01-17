@@ -34,8 +34,11 @@ anatomicRegion<-function(DICOMList){
             else if(grepl('abdomen', tolower(anatomicRegion))==T){
                 return('abdomen')
             }
+            else if(grepl('prostate', tolower(anatomicRegion))==T){
+                return('prostate')
+            }
             else{
-                return('others')
+                return('otherstest')
             }
         })
         anatomicRegion<-as.data.frame(anatomicRegion)
