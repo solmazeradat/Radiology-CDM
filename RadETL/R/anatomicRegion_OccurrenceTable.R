@@ -38,7 +38,7 @@ anatomicRegion<-function(DICOMList){
                 return('prostate')
             }
             else{
-                return('otherstest')
+                return('others')
             }
         })
         anatomicRegion<-as.data.frame(anatomicRegion)
